@@ -1,0 +1,369 @@
+@import url(reset.css);
+@import url(style.css);
+@import url(layout.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+font-family:'Noto Sans KR', sans-serif;
+background-color: aliceblue;
+
+
+}
+
+nav{
+  width: 100%;
+  position: sticky;
+  height: 80px;
+  border: 5px solid #000;
+  background-color: #000000;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+}
+.gnb{
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+  .gnb li{
+    width: 120px;}
+
+nav ul{
+  display: flex;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  line-height: 90px;
+  overflow: hidden;
+  position: relative;}
+
+
+section{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+}
+.image img {
+  margin-top: 300px;
+  height: 630px;
+  overflow: hidden;
+  margin-left: -300px;
+
+}
+
+h1{
+  position: absolute;
+  text-transform: uppercase;
+  border: 30px solid #c70202;
+  font-weight: 900;
+  margin-top: -180px;
+  margin-left: 80px;
+  height: 145px;
+  font-size: 100px;
+  width: 780px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: blanchedalmond;
+  box-shadow: 0 0 20px rgba(0,0,0,50);
+  /* position: fixed; */}
+
+
+  @keyframes title-ani{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}}
+
+    .title-text{
+      border: 3px solid #000;
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      display: flex;
+      white-space: nowrap; 
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      overflow: hidden;
+      margin-top: 210px;
+      box-sizing: border-box;
+    
+    }
+
+    .title-text .title-wrap{
+      animation: title-ani 120s linear infinite;
+    }
+
+.title{
+  background-color: beige;
+  width: 100%;
+  height: 800px;
+
+}
+.title h4{
+font-size: 36px;
+text-align: center;  
+text-transform:uppercase;
+font-weight: 900;
+padding-top: 50px;
+
+
+text-decoration-line:underline;
+text-underline-offset: 15px;
+text-decoration-color: rgb(212, 0, 0);
+text-decoration-thickness: 10px;
+}
+
+.items{
+  display:flex;
+  gap: 100px;
+  margin-top: 100px;
+  padding-left: 100px;
+  position: relative;
+  
+  
+
+
+}
+.item img{
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  
+}
+.item img:hover{
+  filter: brightness(50%);
+}
+.caption{
+  position: absolute;
+    width: 200px;
+  height: inherit;
+  color: #000000;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 20px;
+
+}
+
+.item:hover .caption{opacity: 1;}
+
+
+.caption a{
+  display: block;
+  background-color: rgb(223, 0, 0);
+  color: #fff;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 80px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.caption a:hover{
+  color: rgb(255, 255, 255);
+  background-color: #000;
+}
+.flex-container{
+  display: flex;
+}
+.flex-container img{
+  width: 300px;
+  height: 300px;
+  margin-left:60px;
+  margin-top: 150px;
+}
+
+.flex-container img:hover{
+  transform: scale(1.5);
+
+}
+.flex-container img a:hover{
+  text-align: center;
+
+
+}
+.interior{
+  background-image: url(../image/blue.png);
+  background-size: 100%;
+  height:1000px;
+  
+  
+  }
+
+.interior h5{
+
+  color: #000000;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 15px solid #e80000;
+  background-color: beige;
+  text-align: center;
+}
+
+
+#slider{
+  overflow: hidden;
+  position: relative;
+  width: 3000px;
+  height: 350px;
+  box-sizing: border-box;
+  border-top:20px solid #000;
+  
+}
+
+.image-box{
+  width: 3000px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: bannermove 20s linear infinite;
+  
+}
+
+@keyframes bannermove {
+  0%{transform:translate(0,0);}
+  100%{transform:translate(-100%,0);}
+}
+
+h6{
+  color: #000000;
+  font-size: 100px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  border: 30px solid #d80000;
+  background-color: beige;
+}
+
+h6:hover{
+  background-color: #000;
+  color: beige;
+}
+h2{
+  color: #000000;
+  font-size: 100px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  border: 30px solid #d80000;
+  background-color: beige;
+  margin-top: -30px;
+}
+
+h2:hover{
+    background-color: #000;
+    color: beige;
+  }
+
+.main5{display: flex;
+  flex-wrap: nowrap;
+  animation: bannermove 20s linear infinite;
+  margin-bottom: 20px;
+
+}
+
+.main-last{
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  margin: auto;
+  background: url(../image/cake-1.gif) center ;
+  background-image:80%;
+  object-fit: none;
+  background-color: #009e69;
+  
+
+
+}
+.main-last h3{
+  color: #000000;
+  width: 800px;
+  font-size: 50px;
+  margin: auto;
+
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 15px solid #d80000;
+  background-color: beige;
+  
+
+}
+p{
+  
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: capitalize;
+  
+  color: #ff99e7;
+  white-space: pre-wrap;
+
+
+}
+
+.main-last p:nth-child(3){
+  color: #205a00;
+  font-size: 30px;
+  margin: 50px;
+}
+
+.main-last p:nth-child(5){
+  color: #205a00;
+  font-size: 30px;
+  margin: 50px;
+}
+.main-last strong{
+  color: #205a00;
+  font-size: 20px;
+}
+
+
+.footer{
+  background-color: #000000;
+  width: 100%;
+  height: 450px;
+  position: relative;
+
+}
+
+.footer h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 10px solid #d10000;
+  width: 400px;
+  background-color: beige;
+  font-weight: 900;
+  color: rgb(54, 54, 54);
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+
+  
+}
+
+
+
+.footer img{
+  width: 400px;
+  height: 380px;
+  margin-left: 370px;
+  
+  
+}
+
